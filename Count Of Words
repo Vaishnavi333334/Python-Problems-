@@ -1,0 +1,6 @@
+a=input("Enter the sentence: ")
+space=0
+for i in range(len(a)):
+    if(a[i]==" " and a[i+1]!=" "):
+        space=space+1 
+print("No.of words in your sentence: ",space+1)
