@@ -1,0 +1,19 @@
+import random 
+n=int(input("Enter the team: "))
+teams=[]
+for i in range(n):
+    x=intput("Enter Teams: ")
+    teams.append(x)
+meet=int(input("Enter the num of meetings Between teams: "))
+
+matches=[]
+for i in range(n-1):
+    for j in range(i+1,n):
+        for k in range(meet):
+            matches.append([teams[i],teams[j]])
+random.shuffle(matches)
+pos=1
+
+for i in matches:
+    print("matches{}:{}".format(pos,i[0],i[1]))
+    pos=pos+1
